@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Custom Feira App color palette */
+  --dark-blue: #17173d;
+  --yellow: #FFC01D;
+  --blue: #013FF6;
+  --black: #000000;
+  --white: #ffffff;
+  
+  --background: var(--white);
+  --foreground: var(--dark-blue);
+  --card: var(--white);
+  --card-foreground: var(--dark-blue);
+  --popover: var(--white);
+  --popover-foreground: var(--dark-blue);
+  --primary: var(--dark-blue);
+  --primary-foreground: var(--white);
+  --secondary: var(--yellow);
+  --secondary-foreground: var(--dark-blue);
+  --muted: oklch(70.9% 0.01 56.259);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: var(--blue);
+  --accent-foreground: var(--white);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: var(--white);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: var(--blue);
+  --chart-1: var(--blue);
+  --chart-2: var(--yellow);
+  --chart-3: var(--dark-blue);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: var(--dark-blue);
+  --foreground: var(--white);
+  --card: #1e1e46;
+  --card-foreground: var(--white);
+  --popover: var(--dark-blue);
+  --popover-foreground: var(--white);
+  --primary: var(--yellow);
+  --primary-foreground: var(--dark-blue);
+  --secondary: var(--blue);
+  --secondary-foreground: var(--white);
+  --muted: #2a2a5a;
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: var(--blue);
+  --accent-foreground: var(--white);
+  --border: #2a2a5a;
+  --input: #2a2a5a;
+  --ring: var(--yellow);
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
