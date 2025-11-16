@@ -131,13 +131,13 @@ export function Features() {
                 ref={(el) => {
                   featureRefs.current[index] = el
                 }}
-                className={`transition-all duration-700 ${
+                className={`h-full transition-all duration-700 ${
                   isVisible
                     ? 'opacity-100 translate-y-0'
                     : 'opacity-0 translate-y-8'
                 }`}
               >
-                <Card className="group relative overflow-hidden border-border bg-card p-6 transition-all hover:border-accent hover:shadow-lg">
+                <Card className="group relative flex h-full flex-col overflow-hidden border-border bg-card p-6 transition-all hover:border-accent hover:shadow-lg">
                   <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
                     <Icon className="h-6 w-6" />
                   </div>
