@@ -91,8 +91,8 @@ export function Hero() {
             }`}
           >
             Organize sua vida{' '}
-            <span className="text-accent">produtiva</span> e{' '}
-            <span className="text-secondary">financeira</span>
+            <span className="text-blue-500 dark:text-blue-500">produtiva</span> e{' '}
+            <span className="text-yellow-400 dark:text-yellow-400">financeira</span>
           </h1>
 
           <p
@@ -128,46 +128,46 @@ export function Hero() {
 
           <div className="mt-16">
             <div className="relative mx-auto max-w-4xl">
-              <div className="flex items-end justify-center gap-4">
+              <div className="flex items-end justify-center gap-2 sm:gap-4">
                 {/* iPhone mockup - main screen */}
                 <div
                   ref={phone1Ref}
-                  className={`relative w-64 -rotate-6 transform transition-all duration-700 hover:rotate-0 ${
+                  className={`relative w-32 sm:w-60 -rotate-6 transform transition-all duration-700 hover:rotate-0 ${
                     visibleElements.has('phone1')
                       ? 'opacity-100 translate-x-0 translate-y-0'
-                      : 'opacity-0 -translate-x-8 translate-y-8'
+                      : 'opacity-0 -translate-x-4 translate-y-6 sm:-translate-x-8 sm:translate-y-8'
                   }`}
                 >
-                  <div className="relative rounded-[2.5rem] border-8 border-gray-800 bg-gray-800 shadow-2xl">
-                    <div className="overflow-hidden rounded-[1.5rem] bg-white">
+                  <div className="relative rounded-[1.75rem] border-6 border-gray-800 bg-gray-800 shadow-2xl sm:rounded-[2rem] sm:border-8">
+                    <div className="overflow-hidden rounded-3xl bg-white sm:rounded-[1.5rem]">
                       <div className="aspect-[9/19.5]">
                         <img
                           src="/mobile-app-task-list-screen-with-calendar-integrat.jpg"
-                          alt="Feira App - Tela de Tarefas"
+                          alt="Master Mind - Tela de Tarefas"
                           className="h-full w-full object-cover"
                         />
                       </div>
                     </div>
                     {/* Notch */}
-                    <div className="absolute left-1/2 top-0 h-6 w-32 -translate-x-1/2 rounded-b-2xl bg-gray-800"></div>
+                    <div className="absolute left-1/2 top-0 h-3 w-16 -translate-x-1/2 rounded-b-xl bg-gray-800 sm:h-5 sm:w-24 sm:rounded-b-2xl"></div>
                   </div>
                 </div>
 
                 {/* Android mockup - center larger */}
                 <div
                   ref={phone2Ref}
-                  className={`relative z-10 w-72 transform transition-all duration-700 hover:scale-105 ${
+                  className={`relative z-10 w-40 sm:w-72 transform transition-all duration-700 hover:scale-105 ${
                     visibleElements.has('phone2')
                       ? 'opacity-100 scale-100'
                       : 'opacity-0 scale-95'
                   }`}
                 >
-                  <div className="relative rounded-[2.5rem] border-8 border-gray-900 bg-gray-900 shadow-2xl">
-                    <div className="overflow-hidden rounded-[1.5rem] bg-white">
+                  <div className="relative rounded-[1.75rem] border-6 border-gray-900 bg-gray-900 shadow-2xl sm:rounded-[2rem] sm:border-8">
+                    <div className="overflow-hidden rounded-3xl bg-white sm:rounded-[1.5rem]">
                       <div className="aspect-[9/19.5]">
                         <img
                           src="/mobile-app-dashboard-with-productivity-charts-and-.jpg"
-                          alt="Feira App - Dashboard Principal"
+                          alt="Master Mind - Dashboard Principal"
                           className="h-full w-full object-cover"
                         />
                       </div>
@@ -178,24 +178,24 @@ export function Hero() {
                 {/* iPhone mockup - finance screen */}
                 <div
                   ref={phone3Ref}
-                  className={`relative w-64 rotate-6 transform transition-all duration-700 hover:rotate-0 ${
+                  className={`relative w-32 sm:w-60 rotate-6 transform transition-all duration-700 hover:rotate-0 ${
                     visibleElements.has('phone3')
                       ? 'opacity-100 translate-x-0 translate-y-0'
-                      : 'opacity-0 translate-x-8 translate-y-8'
+                      : 'opacity-0 translate-x-4 translate-y-6 sm:translate-x-8 sm:translate-y-8'
                   }`}
                 >
-                  <div className="relative rounded-[2.5rem] border-8 border-gray-800 bg-gray-800 shadow-2xl">
-                    <div className="overflow-hidden rounded-[1.5rem] bg-white">
+                  <div className="relative rounded-[1.75rem] border-6 border-gray-800 bg-gray-800 shadow-2xl sm:rounded-[2rem] sm:border-8">
+                    <div className="overflow-hidden rounded-3xl bg-white sm:rounded-[1.5rem]">
                       <div className="aspect-[9/19.5]">
                         <img
-                          src="/mobile-app-financial-control-screen-with-expenses-.jpg"
-                          alt="Feira App - Controle Financeiro"
-                          className="h-full w-full object-cover"
+                          src="/calendar-light-theme.jpeg"
+                          alt="Master Mind - Visão geral financeira moderna"
+                          className="h-full w-full object-cover scale-125 translate-y-2 sm:scale-110 sm:translate-y-0"
                         />
                       </div>
                     </div>
                     {/* Notch */}
-                    <div className="absolute left-1/2 top-0 h-6 w-32 -translate-x-1/2 rounded-b-2xl bg-gray-800"></div>
+                    <div className="absolute left-1/2 top-0 h-3 w-16 -translate-x-1/2 rounded-b-xl bg-gray-800 sm:h-5 sm:w-24 sm:rounded-b-2xl"></div>
                   </div>
                 </div>
               </div>

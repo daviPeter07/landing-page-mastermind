@@ -74,8 +74,8 @@ export function CTA() {
                 : 'opacity-0 translate-y-8'
             }`}
           >
-            Junte-se a milhares de profissionais que já organizaram suas vidas 
-            com o Feira App. Comece gratuitamente hoje mesmo.
+            Organize sua rotina com o Master Mind, um aplicativo 100% gratuito 
+            e pensado para ser acessível a todos.
           </p>
           <div
             ref={buttonsRef}
@@ -90,7 +90,7 @@ export function CTA() {
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg border-none" onClick={handleComingSoon}>
-              Falar com Vendas
+              Falar com a equipe
             </Button>
           </div>
           <p
@@ -101,7 +101,7 @@ export function CTA() {
                 : 'opacity-0 translate-y-8'
             }`}
           >
-            Sem cartão de crédito necessário • Cancele a qualquer momento
+            Totalmente gratuito • Sem cartão de crédito nem planos pagos
           </p>
         </div>
       </div>

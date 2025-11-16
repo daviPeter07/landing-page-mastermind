@@ -63,29 +63,29 @@ export function Header() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary shadow-md">
                 <Calendar className="h-6 w-6 text-primary-foreground" />
               </div>
-              <span className="text-2xl font-bold text-foreground">Master Mind</span>
+              <span className="text-2xl font-bold text-foreground dark:text-white text-black">Master Mind</span>
             </div>
             
             <div className="flex items-center gap-8">
-              <nav className="hidden items-center gap-8 md:flex">
+              <nav className="hidden items-center gap-8 md:flex text-black dark:text-white">
                 <a 
                   href="#features" 
                   onClick={(e) => handleAnchorClick(e, '#features')}
-                  className="text-base font-semibold text-muted-foreground transition-colors hover:text-foreground"
+                  className="text-base font-semibold transition-colors hover:opacity-80"
                 >
                   Recursos
                 </a>
                 <a 
                   href="#integrations" 
                   onClick={(e) => handleAnchorClick(e, '#integrations')}
-                  className="text-base font-semibold text-muted-foreground transition-colors hover:text-foreground"
+                  className="text-base font-semibold transition-colors hover:opacity-80"
                 >
                   Integrações
                 </a>
                 <a 
                   href="#cta" 
                   onClick={(e) => handleAnchorClick(e, '#cta')}
-                  className="text-base font-semibold text-muted-foreground transition-colors hover:text-foreground"
+                  className="text-base font-semibold transition-colors hover:opacity-80"
                 >
                   Download
                 </a>
@@ -95,7 +95,7 @@ export function Header() {
                 variant="ghost"
                 size="icon"
                 onClick={toggleTheme}
-                className="h-10 w-10"
+                className="h-10 w-10 text-black dark:text-white"
                 aria-label="Toggle theme"
               >
                 {theme === 'light' ? (
