@@ -302,9 +302,11 @@ export function Integrations() {
                   <div className="relative w-48 rounded-[2rem] border-4 border-gray-800 bg-gray-800 shadow-2xl sm:w-56 sm:rounded-[2.5rem] sm:border-8 lg:w-64">
                     <div className="overflow-hidden rounded-[1.25rem] bg-white sm:rounded-[1.5rem]">
                       <div className="aspect-[9/19.5] flex items-center justify-center p-3 sm:p-4">
-                        <h1 className="text-center text-lg font-bold text-black sm:text-xl md:text-2xl lg:text-3xl dark:text-black">
-                          Demonstração em breve
-                        </h1>
+                       <img
+                          src="/calendar-light-theme.jpeg"
+                          alt="Master Mind - Tela de Tarefas"
+                          className="h-full w-full object-cover"
+                        />
                       </div>
                     </div>
                     <div className="absolute left-1/2 top-0 h-4 w-24 -translate-x-1/2 rounded-b-xl bg-gray-800 sm:h-6 sm:w-32 sm:rounded-b-2xl"></div>
