@@ -7,9 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Feira App - Produtividade e Controle Financeiro',
+  title: 'Mastermind - Produtividade e Controle Financeiro',
   description: 'Sistema completo de controle de produtividade e financeiro integrado com Google Calendar. Organize tarefas, acompanhe sua produtividade e gerencie suas finanças em um só lugar.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
